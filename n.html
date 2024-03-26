@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-image: url('background13.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            background-color:mediumvioletred;
+            color: black;
+            text-align: center;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .row {
+           display: flex;
+        }
+        .column {
+            flex: 10%;
+            padding: 1px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 60px;
+        }
+        
+    </style>
+
+    <script>
+         var nAudio = new Audio('voice noodle.mp3');
+         var nnAudio = new Audio('soundn.mp3');
+         function myAudioFunction(letter) {
+             if(letter == 'n'){
+                 nAudio.play();
+             } else if(letter == 'N'){
+                 nnAudio.play();
+             }
+         }
+    </script> 
+
+    <body>
+        <!--<h1>WORDS FOR ABC</h1>-->
+        <a href="alphabet.html"><img class="button" src="left_arrow.png" alt=""></a>
+        <div class="row">
+        <div class="column">
+            <a onclick="myAudioFunction('N');">
+            <img src="alphabetn.png" alt="a" style="width:100%">
+            </a>
+            </div>
+        <div class="column">
+            <a onclick="myAudioFunction('n');">
+            <img src="NOODLES.gif" alt="a" style="width:45%">  
+            </a> 
+        </div>
+        </div>
+
+         <div>
+             <a href="m.html"><img class="button" src="arrow7.png" alt="" align="left"style="width:400px;height:200px" ></a>  
+            <a href="o.html"><img class="button" src="arrow6.png" alt="" align="right"style="width:400px;height:200px" ></a>  
+        </div>
+        
+        <div class="column" align="center">
+         <a onclick="myAudioFunction('a');">
+            <img src="textn2.png" alt="a" style="width:550px;height:250px;margin-top:-30px">   
+        </a>    
+        </div>
+
+    </body>
