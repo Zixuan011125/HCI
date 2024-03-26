@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <audio hidden id="myAudio" controls autoplay>
+            <source src="tryAgain.mp3" type="audio/mpeg">
+          </audio>
+    </head>
+    
+    <script>
+      
+        function backButton(){
+            window.history.back();
+        }
+        </script>
+     <body>
+        <img class="bg-image" src="Answer_Wrong.png" >
+        <!-- <a href="letsCount1.html"><img class="button" onclick="" src="left_arrow.png" alt=""></a> -->
+        <img class="button" onclick="backButton()" src="left_arrow.png" alt=""></a>
+    </body>
+
+    <style>
+          *{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+        .bg-image{
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+        .button{
+            width: 8%;
+            height: 15%;
+            /*position: absolute is needed */
+            position: absolute;
+            left: 5%;
+            top: 10%;
+            padding-right: 100px; 
+        }
+        *{
+            margin: 0;
+            width : 100%;
+            padding: 0; 
+        }
+        </style>
+</html>

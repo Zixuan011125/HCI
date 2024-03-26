@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="bg-image">
+            <img src="newBg.png">
+            //<a href="home.html"><img class="button" src="home.png" alt></a>
+        </div>
+        <a href="letsCount2.html"><img class="button-image" src="eight.png"></a>
+        <a href="letsCount3.html"><img class="button1-image" src="two7.png"></a>
+        <a href="letsCount3.html"><img class="button2-image"
+                src="Four12.png"></a>
+
+    </body>
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+}
+        .bg-image{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    z-index:-99;
+        }
+        .button-image{
+            width: 450px;
+            height: 310px;
+            margin-top: 0px;
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            position: fixed;
+            left: 1%;
+            top: 58%;
+            border-radius: 25px;
+        }
+
+        button-image:hover {
+            transition: 0.5s;
+        }
+
+        button-image:hover{
+            transform:scale(1,2);
+        }
+
+        .button1-image{
+            width:230px;
+            margin-top: -155px;
+            position: fixed;
+            left: 45%;
+            top: 80%;
+            border-radius: 25px;
+            height: 280px;
+        }
+        .button2-image{
+            width: 240px;
+            margin-top: -155px;
+            position: fixed;
+            right: 58%;
+            top: 81%;
+            border-radius: 25px;
+            height: 280px;
+        }
+        .button{
+            width: 10%;
+            height: 20%;
+            /*position: absolute is needed */
+            position: absolute;
+            right: 5%;
+            top: 3%;
+            padding-right: 20px; 
+        }
+        *{
+            margin: 0;
+            width : 100%;
+            padding: 0; 
+        }
+    </style>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+*{
+    margin:0;
+    padding:0;
+}
+    .bkg2{
+        position: fixed;
+        width:100%;
+        height: 100%;
+        z-index:-99;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        /* background-position: center; */
+        display: flex;
+        margin:0;
+        padding:0;
+    }
+
+    .picture-row{
+        position: fixed;
+        top: 30%;
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top:10px;
+        margin-left:5%;
+        row-gap:20px;
+        column-gap:5px;
+        height:400px;
+        cursor: pointer;
+        
+    }
+    i{
+        //margin-left:5px;
+    }
+    
+    .button{
+        margin:30px;
+        padding-top:-20px;
+    }
+    .aq:hover{
+    transform:scale(1.2);
+}
+    .button:hover{
+    transform:scale(1.1);
+</style>
+
+<script>
+    var oneAudio = new Audio('No1.mp3');
+    var twoAudio = new Audio('No2.mp3');
+    var threeAudio = new Audio('No3.mp3');
+    var fourAudio = new Audio('No4.mp3');
+    var fiveAudio = new Audio('No5.mp3');
+    var sixAudio = new Audio('No6.mp3');
+    var sevenAudio = new Audio('No7.mp3');
+    var eightAudio = new Audio('No8.mp3');
+    var nineAudio = new Audio('No9.mp3');
+    var tenAudio = new Audio('No10.mp3');
+    var elevenAudio = new Audio('No11.mp3');
+    var twelveAudio = new Audio('No12.mp3');
+    var thirteenAudio = new Audio('No13.mp3');
+    var forteenAudio = new Audio('No14.mp3');
+    var fifteenAudio = new Audio('No15.mp3');
+    var sixteenAudio = new Audio('No16.mp3');
+    var seventeenAudio = new Audio('No17.mp3');
+    var eighteenAudio = new Audio('No18.mp3');
+    var nineteenAudio = new Audio('No19.mp3');
+    var twentyAudio = new Audio('No20.mp3');
+ 
+
+    function myAudioFunction(number){
+        if(number == '1'){
+            oneAudio.play();
+        }else if(number == '2'){
+            twoAudio.play();
+        }else if(number == '3'){
+            threeAudio.play();
+        }else if(number == '4'){
+            fourAudio.play();
+        }else if(number == '5'){
+            fiveAudio.play();
+        }else if(number == '6'){
+            sixAudio.play();
+        }else if(number == '7'){
+            sevenAudio.play();
+        }else if(number == '8'){
+            eightAudio.play();
+        }else if(number == '9'){
+            nineAudio.play();
+        }else if(number == '10'){
+            tenAudio.play();
+        }else if(number == '11'){
+            elevenAudio.play();
+        }else if(number == '12'){
+            twelveAudio.play();
+        }else if(number == '13'){
+            thirteenAudio.play();
+        }else if(number == '14'){
+            forteenAudio.play();
+        }else if(number == '15'){
+            fifteenAudio.play();
+        }else if(number == '16'){
+            sixteenAudio.play();
+        }else if(number == '17'){
+            seventeenAudio.play();
+        }else if(number == '18'){
+            eighteenAudio.play();
+        }else if(number == '19'){
+            nineteenAudio.play();
+        }else if(number == '20'){
+            twentyAudio.play();
+        }    
+    }
+</script>
+<body>
+ 
+<img class="bkg2" src="cartoonbackground.jpg">
+<a href="home.html"><img class="button" src="left_arrow.png" ></a>
+
+<!-- <h1 style="font-family:Franklin Gothic Medium; font-size:4em; color:blue;" align="center" ><i class= "fa fa-mortar-board"></i> LEARN NUMBERS<i class="fa fa-edit"></i></h1><br><br> -->
+<div class="titlelearnnumber">
+    <div align="center">
+    <img src=" learn_num.png" >   
+    </div>
+</div>
+<div class="picture-row">
+    <a onclick="myAudioFunction('1')"><img class="aq" src="Number 1.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('2')"><img class="aq" src="Number 2.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('3')"><img class="aq" src="Number 3.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('4')"><img class="aq" src="Number 4.png" alt="Trulli" width="270" height="200" ></a>  
+    <a onclick="myAudioFunction('5')"><img class="aq" src="Number 5.png" alt="Trulli" width="270" height="200" ></a>  
+    <a onclick="myAudioFunction('6')"><img class="aq" src="Number 6.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('7')"><img class="aq" src="Number 7.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('8')"><img class="aq" src="Number 8.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('9')"><img class="aq" src="Number 9.png" alt="Trulli" width="270" height="200" ></a>  
+    <a onclick="myAudioFunction('10')"><img class="aq" src="Number 10.png" alt="Trulli" width="270" height="200" ></a>
+    <!-- <a onclick="myAudioFunction('11')"><img src="number.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('12')"><img src="number.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('13')"><img src="number.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('14')"><img src="number.png" alt="Trulli" width="270" height="200" ></a>  
+    <a onclick="myAudioFunction('15')"><img src="number.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('16')"><img src="number.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('17')"><img src="number.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('18')"><img src="number.png" alt="Trulli" width="270" height="200" ></a>
+    <a onclick="myAudioFunction('19')"><img src="number.png" alt="Trulli" width="270" height="200" ></a>  
+    <a onclick="myAudioFunction('20')"><img src="number.png" alt="Trulli" width="270" height="200" ></a> -->
+
+</div>
+
+</body>
+</html>
+

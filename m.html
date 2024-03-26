@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-image: url('background13.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            background-color:mediumvioletred;
+            color: black;
+            text-align: center;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .row {
+           display: flex;
+        }
+        .column {
+            flex: 10%;
+            padding: 1px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 60px;
+        }
+        
+    </style>
+
+    <script>
+         var mAudio = new Audio('voice monkey.mp3');
+         var mmAudio = new Audio('soundm.mp3');
+         function myAudioFunction(letter) {
+             if(letter == 'm'){
+                 mAudio.play();
+             } else if(letter == 'M'){
+                 mmAudio.play();
+             }
+         }
+    </script> 
+
+    <body>
+        <!--<h1>WORDS FOR ABC</h1>-->
+        <a href="alphabet.html"><img class="button" src="left_arrow.png" alt=""></a>
+        <div class="row">
+        <div class="column">
+            <a onclick="myAudioFunction('M');">
+            <img src="alphabetm.png" alt="a" style="width:100%">
+            </a>
+            </div>
+        <div class="column">
+            <a onclick="myAudioFunction('m');">
+            <img src="MONKEY.gif" alt="a" style="width:60%">  
+            </a> 
+        </div>
+        </div>
+
+          <div>
+             <a href="l.html"><img class="button" src="arrow7.png" alt="" align="left"style="width:400px;height:200px" ></a>  
+            <a href="n.html"><img class="button" src="arrow6.png" alt="" align="right"style="width:400px;height:200px" ></a>  
+        </div>
+
+       
+        
+        <div class="column" align="center">
+         <a onclick="myAudioFunction('a');">
+            <img src="textm2.png" alt="a" style="width:550px;height:250px;margin-top:-30px">   
+        </a>    
+        </div>
+
+    </body>
