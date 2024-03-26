@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-image: url('background13.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            background-color:mediumvioletred;
+            color: black;
+            text-align: center;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .row {
+           display: flex;
+        }
+        .column {
+            flex: 10%;
+            padding: 1px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 60px;
+        }
+        
+    </style>
+
+     <script>
+         var uAudio = new Audio('voice umbrella.mp3');
+         var uuAudio = new Audio('soundu.mp3');
+         function myAudioFunction(letter) {
+             if(letter == 'u'){
+                 uAudio.play();
+             } else if(letter == 'U'){
+                 uuAudio.play();
+             }
+         }
+    </script>
+
+    <body>
+        <!--<h1>WORDS FOR ABC</h1>-->
+        <a href="alphabet.html"><img class="button" src="left_arrow.png" alt=""></a>
+        <div class="row">
+        <div class="column">
+            <a onclick="myAudioFunction('U');">
+            <img src="alphabetu.png" alt="a" style="width:100%">
+            </a>
+            </div>
+        <div class="column">
+            <a onclick="myAudioFunction('u');">
+            <img src="UMBRELLA.gif" alt="a" style="width:60%">  
+            </a> 
+        </div>
+        </div>
+
+        <div>
+             <a href="t.html"><img class="button" src="arrow7.png" alt="" align="left"style="width:400px;height:200px" ></a>  
+            <a href="v.html"><img class="button" src="arrow6.png" alt="" align="right"style="width:400px;height:200px" ></a>  
+        </div>
+        <div class="column" align="center">
+         <a onclick="myAudioFunction('a');">
+            <img src="textu2.png" alt="a" style="width:500px;height:230px;margin-top:-30px">   
+        </a>    
+        </div>
+
+    </body>
